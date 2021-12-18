@@ -32,5 +32,5 @@ print(names)
 for name in names:
     # modify the letter
     new_letter = letter.replace('[name]', name, 1)
-    with open(f"./Output/ReadyToSend/{name}.txt", mode = 'w') as file:
+    with open(f"./Output/ReadyToSend/letter_for_{name}.txt", mode = 'w') as file:
         file.write(new_letter)
