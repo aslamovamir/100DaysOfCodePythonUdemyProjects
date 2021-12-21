@@ -22,10 +22,7 @@ print(file1_nums)
 print(file2_nums)
 
 # now combine the two lists into one list with the nums common to both the lists
-result = []
-for num in file1_nums:
-  if num in file2_nums:
-    result.append(num)
+result = [num for num in file1_nums if num in file2_nums]
 
 print(result)
 
