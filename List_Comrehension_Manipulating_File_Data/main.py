@@ -33,6 +33,7 @@ print(result)
 # create a new file object with the action of "write"
 new_file_obj = open("new_file.txt", "w")
 # write the result in str form to the file opened by the file object
-new_file_obj,write(str(result))
+for num in result:
+  new_file_obj.write(str(num) + '\n')
 # close the file object
 new_file_obj.close()
