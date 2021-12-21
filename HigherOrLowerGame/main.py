@@ -6,16 +6,9 @@
 # Date of Creation: /started: 08/28/2021, 5:04 PM/ /finished:    
 
 
-
-
-
 import random
 import art
 import game_data
-
-
-
-
 
 
 # this function will print the two items to compare
@@ -24,10 +17,6 @@ def print_items(item1, item2):
   print(f"\n\nCompare A: {item1['name']}, {item1['description']}, from {item1['country']}.")
   print(art.vs)
   print(f"Against B: {item2['name']}, {item2['description']}, from {item2['country']}.")
-
-
-
-
 
 
 # this function will compare the number of followers of the two items and accordingly return either 
@@ -53,10 +42,6 @@ def compare_items(item1, item2, score):
       score = -1
   
   return score
-
-
-
-
 
 
 # this function will be the main game to recursavily call itslef when needed
